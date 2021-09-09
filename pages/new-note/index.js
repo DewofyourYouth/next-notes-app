@@ -4,8 +4,8 @@ import { useState } from "react";
 
 export default function NewNote() {
   const [note, setNote] = useState({
-    title: null,
-    description: null,
+    title: "",
+    description: "",
     hebrew: false,
   });
 
@@ -20,9 +20,7 @@ export default function NewNote() {
       },
     });
     const data = await response.json();
-    setNote({ title: null, description: null });
   };
-
   return (
     <Container>
       <h1>New Note</h1>
@@ -51,7 +49,13 @@ export default function NewNote() {
             setNote({ ...note, hebrew: !note.hebrew });
           }}
         />
-        <Button variant="outline-primary" onClick={(e) => submitPost(e)}>
+        <Button
+          variant="outline-primary"
+          onClick={(e) => {
+            submitPost(e);
+            setNote({ title: "", description: "", hebrew: false });
+          }}
+        >
           SUBMIT
         </Button>
       </Form>
