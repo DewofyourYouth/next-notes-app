@@ -1,3 +1,3 @@
-# Next BNB
+# Next Notes App
 
-Well this is silly. I was about to try the tutorial for NextBNB, but then that didn't really work out for me. Instead I just used Mongoose.
+An app for note taking using Nextjs.
