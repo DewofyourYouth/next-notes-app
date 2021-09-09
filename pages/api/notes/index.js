@@ -3,7 +3,7 @@ import dbConnect from "../../../utils/dbConnect";
 
 dbConnect();
 
-export default async (req, res) => {
+const NotesApi = async (req, res) => {
   const { method } = req;
   switch (method) {
     case "GET":
@@ -28,3 +28,5 @@ export default async (req, res) => {
       res.status(400).json({ success: false });
   }
 };
+
+export default NotesApi;

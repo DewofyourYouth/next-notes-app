@@ -1,4 +1,4 @@
-export default function Index({ notes }) {
+function Index({ notes }) {
   return (
     <div className="container px-4">
       <div className="row gx-5">
@@ -34,3 +34,5 @@ Index.getInitialProps = async () => {
   const { data } = await res.json();
   return { notes: data };
 };
+
+export default Index;

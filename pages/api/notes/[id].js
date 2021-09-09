@@ -3,7 +3,7 @@ import dbConnect from "../../../utils/dbConnect";
 
 dbConnect();
 
-export default async (req, res) => {
+const NotesIDApi = async (req, res) => {
   const {
     query: { id },
     method,
@@ -45,3 +45,5 @@ export default async (req, res) => {
       res.status(400).json({ success: false });
   }
 };
+
+export default NotesIDApi;
