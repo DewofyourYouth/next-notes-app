@@ -20,6 +20,11 @@ const NoteSchema = new mongoose.Schema({
   },
 });
 
-const Note = mongoose.model("Note", NoteSchema) || mongoose.model("Note");
+let Note;
+try {
+  Note = mongoose.model("Note", NoteSchema);
+} catch {
+  Note = mongoose.model("Note");
+}
 
 export default Note;
