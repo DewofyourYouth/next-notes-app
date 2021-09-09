@@ -3,7 +3,7 @@ function Index({ notes }) {
     <div className="container px-4">
       <div className="row gx-5">
         <div className="col">
-          <div className="p-5 mb-4 bg-light rounded-3 text-center">
+          <div className="p-5 mb-4 rounded-3 text-center">
             <h1 className="fw-bold">Notes</h1>
           </div>
         </div>
