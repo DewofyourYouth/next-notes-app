@@ -13,6 +13,11 @@ const NoteSchema = new mongoose.Schema({
     required: true,
     maxlength: [200, "Description cannot be more than 40 charachters"],
   },
+  hebrew: {
+    type: Boolean,
+    default: false,
+    required: false,
+  },
 });
 
 let Note;
