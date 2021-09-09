@@ -35,8 +35,9 @@ export default function NewNote() {
         <Form.Label>Description</Form.Label>
         <Form.Control
           as="textarea"
-          rows={3}
+          rows={5}
           name="description"
+          placeholder="This is where you should write your note."
           value={note.description}
           onChange={(e) => setNote({ ...note, description: e.target.value })}
         />
