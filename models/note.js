@@ -11,7 +11,7 @@ const NoteSchema = new mongoose.Schema({
   description: {
     type: String,
     required: true,
-    maxlength: [200, "Description cannot be more than 40 charachters"],
+    maxlength: [200, "Description cannot be more than 200 charachters"],
   },
   hebrew: {
     type: Boolean,

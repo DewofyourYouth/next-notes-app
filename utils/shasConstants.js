@@ -26,7 +26,7 @@ export const amudim = {
   makkos: 46,
   shavous: 96,
   avodahZarah: 150,
-  harayos: 25,
+  horayos: 25,
   zevachim: 238,
   menachos: 217,
   chullin: 281,
